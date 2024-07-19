@@ -32,7 +32,7 @@ const checkbox2 = document.getElementById("checkbox2");
 // Inicialisacion de variables
 let longitud = parseInt(length.value);
 
-let base = "ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz0123456789#-_@"
+let base = "ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz"
 const numbers = "01234567899";
 const symbols = "!-_@?=/()[]{}";
 
