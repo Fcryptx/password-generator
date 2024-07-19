@@ -37,8 +37,8 @@ const numbers = "01234567899";
 const symbols = "!-_@?=/()[]{}";
 
 
-if (checkbox1.checked) base+=numbers;
-if (checkbox2.checked) base+=symbols;
+if (checkbox2.checked) base+=numbers;
+if (checkbox1.checked) base+=symbols;
 
 	passwd.innerText = generatePassword(base, longitud);
 	passwd.value = generatePassword(base, longitud);
@@ -52,6 +52,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+
+// Funcion alerta
+function awesome() {
+	const text = document.getElementById("text");
+
+	text.innerHTML = "Texto Copiado!"
+	text.style.display = "block";
+}
 
 // Copiar al portapapeles
 document.getElementById("copy").addEventListener('click', function() {
@@ -67,5 +75,6 @@ document.getElementById("copy").addEventListener('click', function() {
 	document.execCommand('copy');
 	textArea.style.display = "none";
 
-	alert("Texto Copiado!");
+	awesome()
+
 });
