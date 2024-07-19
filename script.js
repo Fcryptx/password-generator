@@ -66,4 +66,6 @@ document.getElementById("copy").addEventListener('click', function() {
 	textArea.select();
 	document.execCommand('copy');
 	textArea.style.display = "none";
+
+	alert("Texto Copiado!");
 });
